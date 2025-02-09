@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://g.co/kgs/crq4rWL" rel="stylesheet">
+  
+  
+  <!-- this is for showing th e message ...other projects are not available 
+  -->
+  <title>Warning Message</title>
+    <style>
+        h5 {
+            color: red; /* Makes text red */
+            background-color: #ffcc00; /* Yellow background for warning style */
+            padding: 10px;
+            border: 2px solid red; /* Red border to enhance the warning effect */
+            border-radius: 5px; /* Rounded corners for a more styled look */
+            text-align: center; /* Centers the text */
+            font-family: Arial, sans-serif; /* Optional: makes the text more readable */
+        }
+    </style>
+	
+	
+</head>
+
+<body>
+
+  <!--https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="images/profile-pic.jpeg" alt="Ankush Lagwal" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ankush Lagwal">Ankush Lagwal</h1>
+
+          <p class="title">Computer Science Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:lagwalankush6@gmail.com" class="contact-link">lagwalankush6@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919805657931" class="contact-link">+(91)9805657931</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">July 02, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Hamirpur, H.P (177022)</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/AnkushLagwal" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ankush-lagwal-36550931b" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/ankush_lagwal_07?igsh=MWVhdmliempkNzRyeg==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            <!--I am a third-year B.Tech student specializing in Computer Science Engineering. With a deep fascination for AI’s transformative power, I’ve built a strong foundation in AI and ML through coursework and hands-on projects, including deepfake detection and biometric recognition systems.-->
+            I am a third-year B.Tech student specializing in Computer Science Engineering. With a strong passion for web development, I’ve built a solid foundation in front-end and back-end technologies through coursework and hands-on projects, including developing responsive websites and creating dynamic web applications.
+          </p>
+
+          <p>
+            Passionate about solving real-world problems with AI, I’ve worked extensively with TensorFlow and PyTorch. My curiosity drives me to continuously learn and explore advancements in AI, seeking to improve accuracy and reliability in my projects. I look forward to contributing to impactful AI innovations and collaborating with like-minded individuals.
+          </p>
+        </section>
+
+
+        <!--
+          - What i'm doin
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/we-dev-logo.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/ml-logo.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">ML projects</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+            
+
+          </ul>
+
+        </section>
+
+
+
+
+
+
+
+
+      
+            <!--
+          - activities
+        -->
+<!--
+        <section class="activities">
+          <h3 class="h3 activities-title" style="color: white;">Activities</h3>
+        
+          <ul class="activities-list has-scrollbar">
+            <li class="activities-item">
+              <div class="content-card" data-activities-item>
+                <figure class="activities-avatar-box">
+                  <a href="https://drive.google.com/file/d/1tRsuQuynTZF1tWmMdHFb6TC9EzxqTGVV/view?usp=share_link" target="_blank">
+                    <img 
+                      src="images/CERTIFICATE/NITJ internship.PNG" 
+                      alt="name1" 
+                      width="100" 
+                      data-activities-avatar 
+                      onclick="openFullscreen(this)"
+                      id="imageToZoom"
+                    >
+                  </a>
+                </figure>
+        
+                <h4 class="h4 activities-item-title" data-activities-title>
+                  <span style="color: white;" class="text-clickable" onclick="openFullscreenFromText()">NIT JALANDHAR INTERNSHIP</span>
+                </h4>
+        
+                <div class="activities-text" data-activities-text>
+                  <p>
+                    <span style="color: white;" class="text-clickable" onclick="openFullscreenFromText()">Made deepfake detection and heart disease detection model</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        
+          <!-- Fullscreen Modal -->
+          <div id="fullscreenModal" class="fullscreen-modal">
+            <span class="close-button" onclick="closeFullscreen()">&times;</span>
+            <img id="fullscreenImage" class="fullscreen-image">
+          </div>
+        </section>
+        
+        <style>
+          /* Fullscreen Modal Styles */
+          .fullscreen-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+          }
+        
+          .fullscreen-image {
+            max-width: 90%;
+            max-height: 90%;
+          }
+        
+          .close-button {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            z-index: 1001;
+            font-weight: bold;
+            border: none; /* No border */
+            background: none; /* Transparent background */
+            padding: 5px; /* Padding for easier click */
+          }
+        
+          .close-button:hover {
+            color: #bbb; /* Hover color */
+          }
+        
+          /* Make cursor pointer on clickable text */
+          .text-clickable {
+            cursor: pointer; /* Pointer cursor when hovering over text */
+          }
+        </style>
+        
+        <script>
+          // Open Fullscreen for Images
+          function openFullscreen(imageElement) {
+            const modal = document.getElementById("fullscreenModal");
+            const modalImg = document.getElementById("fullscreenImage");
+            modal.style.display = "flex";
+            modalImg.src = imageElement.src;
+          }
+        
+          // Open Fullscreen for Text (clicked text)
+          function openFullscreenFromText() {
+            const imageElement = document.getElementById("imageToZoom");
+            openFullscreen(imageElement); // Trigger the same function as for the image click
+          }
+        
+          // Close Fullscreen
+          function closeFullscreen() {
+            const modal = document.getElementById("fullscreenModal");
+            modal.style.display = "none";
+          }
+        </script>
+
+
+        <!--
+          - activities IMPPORTANTTTTTTTTTTTTTTTTT
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="activities-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+        <!--
+          - activities IMPPORTANTTTTTTTTTTTTTTTTT
+        -->
+       
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+        
+        <!--
+          - certificate
+        -->
+
+
+
+
+        <section class="certificate">
+          <h3 class="h3 certificate-title">Certificate</h3>
+          <ul class="certificate-list has-scrollbar">
+            <li class="certificate-item">
+              <div class="image-container">
+                <img src="images/CERTIFICATE/Java-EXCELLENCE TECH..JPEG" alt="Java Certificate" class="zoomable-image">
+              </div>
+              <p style="color: white; text-align: center; font-weight: bold; margin-top: 10px;">Java Programming (EXCELLENCE TECH.) </p>
+            </li>
+            <li class="certificate-item">
+              <div class="image-container">
+                <img src="images/CERTIFICATE/Python-EXCELLENCE TECH..JPG" alt="Python Certificate" class="zoomable-image">
+              </div>
+              <p style="color: white; text-align: center; font-weight: bold; margin-top: 10px;">Python Programming (EXCELLENCE TECH.) </p>
+            </li>
+        <!--    <li class="certificate-item">
+              <div class="image-container">
+                <img src="images/CERTIFICATE/nptel-python.JPG" alt="NPTEL Python Certificate" class="zoomable-image">
+              </div>
+              <p style="color: white; text-align: center; font-weight: bold; margin-top: 10px;">Python for Data Science (NPTEL)</p>
+            </li>
+            <li class="certificate-item">
+              <div class="image-container">
+                <img src="images/CERTIFICATE/Spoken-tutorial.JPG" alt="Spoken Tutorial Certificate" class="zoomable-image">
+              </div>
+              <p style="color: white; text-align: center; font-weight: bold; margin-top: 10px;">Python 3.4.3 (Spoken Tutorial)</p>
+            </li>
+            <li class="certificate-item">
+              <div class="image-container">
+                <img src="images/CERTIFICATE/Deep Learning NPTEL.JPG" alt="Deep Learning (NPTEL)" class="zoomable-image">
+              </div>
+              <p style="color: white; text-align: center; font-weight: bold; margin-top: 10px;">Deep Learning for Computer Vision (NPTEL)</p>
+            </li>
+          </ul>
+        </section>
+        
+        <!-- Fullscreen Modal -->
+        <div id="image-modal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modal-image">
+        </div>
+        
+        <!-- CSS -->
+        <style>
+          .certificate-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            overflow-x: hidden; /* Hide horizontal overflow */
+            transition: transform 0.3s ease-in-out;
+          }
+        
+          .certificate-item {
+            list-style: none;
+            flex: 1 1 calc(25% - 20px); /* 4 columns on desktop */
+            max-width: calc(25% - 20px);
+          }
+        
+          .image-container {
+            width: 100%; /* Full width of parent */
+            aspect-ratio: 4 / 3; /* Maintain standard 4:3 ratio */
+            overflow: hidden;
+            position: relative;
+          }
+        
+          .zoomable-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+          }
+        
+          .zoomable-image:hover {
+            transform: scale(1.1);
+          }
+        
+          /* Horizontal slider for mobile devices */
+          @media (max-width: 768px) {
+            .certificate-list {
+              flex-wrap: nowrap; /* Prevent wrapping */
+              overflow-x: scroll; /* Enable horizontal scrolling */
+              scroll-snap-type: x mandatory; /* Snap to items */
+            }
+        
+            .certificate-item {
+              flex: 0 0 auto; /* Keep items side-by-side */
+              width: 80%; /* Set width for each item */
+              scroll-snap-align: start; /* Snap alignment */
+            }
+        
+            .image-container {
+              width: 100%; /* Ensure consistent aspect ratio */
+            }
+          }
+        
+          /* Custom scrollbar styles for mobile */
+          @media (max-width: 768px) {
+            .certificate-list::-webkit-scrollbar {
+              height: 8px;
+            }
+        
+            .certificate-list::-webkit-scrollbar-thumb {
+              background: rgba(255, 255, 255, 0.5);
+              border-radius: 10px;
+            }
+        
+            .certificate-list::-webkit-scrollbar-thumb:hover {
+              background: rgba(255, 255, 255, 0.8);
+            }
+          }
+        
+          .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+            justify-content: center;
+            align-items: center;
+          }
+        
+          .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+          }
+        
+          .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        
+          .close:hover,
+          .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        </style>
+        
+        <!-- JavaScript -->
+        <script>
+          // Get modal elements
+          const modal = document.getElementById("image-modal");
+          const modalImage = document.getElementById("modal-image");
+          const closeButton = document.querySelector(".close");
+        
+          // Add click event to all zoomable images
+          document.querySelectorAll(".zoomable-image").forEach((image) => {
+            image.addEventListener("click", () => {
+              modal.style.display = "flex";
+              modalImage.src = image.src;
+            });
+          });
+        
+          // Close modal on click of close button
+          closeButton.addEventListener("click", () => {
+            modal.style.display = "none";
+          });
+        
+          // Close modal on click outside the image
+          modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        </script>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">LR institute of engineering & technology-Solan-173223</h4>
+
+              <span>2023 — 2026</span>
+
+              <p class="timeline-text">
+                Currently doing B-tech in CSE..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ABVGIET-Pragatinagar(Shimla)-171202</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">
+                Completed diploma in CSE with 74.5% ..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Govt.Sen.Sec.School-Pohanj (Hamirpur)-177022</h4>
+
+              <span>2020</span>
+
+              <p class="timeline-text">
+                completed my 12th in PCM with 78.0% .. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Govt.Sen.Sec.School-Pohanj (Hamirpur)-177022</h4>
+
+              <span>2018</span>
+
+              <p class="timeline-text">
+                completed my 10th with 72.0% ..
+              </p>
+
+            </li>
+
+            
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">web development</h4>
+  
+              <span>2022 — present</span>
+  
+              <p class="timeline-text">
+                I have experience in developing responsive and visually appealing websites using HTML, CSS, and JavaScript. 
+                My work includes creating user-friendly interfaces, implementing interactive features, and ensuring cross-browser compatibility.
+              </p>
+  
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning algorithm.</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                I have experience developing and deploying machine learning models using Python,
+                focusing on classification, regression, and clustering techniques. I am proficient with
+                libraries such as scikit-learn, TensorFlow, and PyTorch for building and evaluating predictive models.
+              </p>
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+        
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+            <li style="flex: 1 1 calc(45% - 20px); max-width: calc(45% - 20px); 
+                       border: 2px solid #333; 
+                       border-radius: 10px; 
+                       background: linear-gradient(145deg, #1e1e1e, #292929); 
+                       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), -4px -4px 10px rgba(50, 50, 50, 0.1); 
+                       padding: 20px; 
+                       text-align: center; 
+                       color: #ffffff; 
+                       transition: transform 0.3s, background 0.3s;">
+              Web Development
+            </li>
+
+            
+            <li style="flex: 1 1 calc(45% - 20px); max-width: calc(45% - 20px); 
+                       border: 2px solid #333; 
+                       border-radius: 10px; 
+                       background: linear-gradient(145deg, #1e1e1e, #292929); 
+                       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), -4px -4px 10px rgba(50, 50, 50, 0.1); 
+                       padding: 20px; 
+                       text-align: center; 
+                       color: #ffffff; 
+                       transition: transform 0.3s, background 0.3s;">
+              Html
+            </li>
+
+            <li style="flex: 1 1 calc(45% - 20px); max-width: calc(45% - 20px); 
+                       border: 2px solid #333; 
+                       border-radius: 10px; 
+                       background: linear-gradient(145deg, #1e1e1e, #292929); 
+                       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), -4px -4px 10px rgba(50, 50, 50, 0.1); 
+                       padding: 20px; 
+                       text-align: center; 
+                       color: #ffffff; 
+                       transition: transform 0.3s, background 0.3s;">
+              Java Programming
+            </li>
+
+            <li style="flex: 1 1 calc(45% - 20px); max-width: calc(45% - 20px); 
+                       border: 2px solid #333; 
+                       border-radius: 10px; 
+                       background: linear-gradient(145deg, #1e1e1e, #292929); 
+                       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), -4px -4px 10px rgba(50, 50, 50, 0.1); 
+                       padding: 20px; 
+                       text-align: center; 
+                       color: #ffffff; 
+                       transition: transform 0.3s, background 0.3s;">
+              Data Structures and Algorithms
+            </li>
+
+        
+            <li style="flex: 1 1 calc(45% - 20px); max-width: calc(45% - 20px); 
+                       border: 2px solid #333; 
+                       border-radius: 10px; 
+                       background: linear-gradient(145deg, #1e1e1e, #292929); 
+                       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), -4px -4px 10px rgba(50, 50, 50, 0.1); 
+                       padding: 20px; 
+                       text-align: center; 
+                       color: #ffffff; 
+                       transition: transform 0.3s, background 0.3s;">
+              Machine Learning Algorithms
+            </li>
+
+            <li style="flex: 1 1 calc(45% - 20px); max-width: calc(45% - 20px); 
+                       border: 2px solid #333; 
+                       border-radius: 10px; 
+                       background: linear-gradient(145deg, #1e1e1e, #292929); 
+                       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), -4px -4px 10px rgba(50, 50, 50, 0.1); 
+                       padding: 20px; 
+                       text-align: center; 
+                       color: #ffffff; 
+                       transition: transform 0.3s, background 0.3s;">
+              Artificial Intelligence (AI)
+            </li>
+
+            <li style="flex: 1 1 calc(45% - 20px); max-width: calc(45% - 20px); 
+                       border: 2px solid #333; 
+                       border-radius: 10px; 
+                       background: linear-gradient(145deg, #1e1e1e, #292929); 
+                       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), -4px -4px 10px rgba(50, 50, 50, 0.1); 
+                       padding: 20px; 
+                       text-align: center; 
+                       color: #ffffff; 
+                       transition: transform 0.3s, background 0.3s;">
+              Natural Language Processing (NLP)
+            </li>
+        
+          </ul>
+        
+        
+          <section style="text-align: center; margin-top: 40px;">
+            <!-- View Resume Button -->
+            <a href="images/CERTIFICATE/resume.pdf" target="_blank" style="
+              display: inline-block;
+              padding: 15px 30px;
+              font-size: 18px;
+              font-weight: bold;
+              text-transform: uppercase;
+              color: hsl(45, 100%, 71%);
+              text-decoration: none;
+              background: linear-gradient(90deg, #333, #555);
+              border: none;
+              border-radius: 50px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+              transition: all 0.4s ease;
+              margin-right: 20px;
+              position: relative;
+              overflow: hidden;
+            ">
+              <span style="display: inline-block; position: relative; z-index: 2;">
+                <ion-icon name="eye-outline" style="vertical-align: middle; margin-right: 8px; font-size: 20px;"></ion-icon>
+                View Resume
+              </span>
+              <span style="
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 300%;
+                height: 100%;
+                background: linear-gradient(90deg, #777, #444);
+                transition: all 0.4s ease;
+                z-index: 1;
+                transform: rotate(10deg);
+              "></span>
+            </a>
+            
+            <!-- Download Resume Button -->
+            <a href="images/CERTIFICATE/resume.pdf" download="ARYAN RESUME" style="
+              display: inline-block;
+              padding: 15px 30px;
+              font-size: 18px;
+              font-weight: bold;
+              text-transform: uppercase;
+              color: hsl(45, 100%, 71%);
+              text-decoration: none;
+              background: linear-gradient(90deg, #222, #444);
+              border: none;
+              border-radius: 50px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+              transition: all 0.4s ease;
+              position: relative;
+              overflow: hidden;
+            ">
+              <span style="display: inline-block; position: relative; z-index: 2;">
+                <ion-icon name="cloud-download-outline" style="vertical-align: middle; margin-right: 8px; font-size: 20px;"></ion-icon>
+                Download Resume
+              </span>
+              <span style="
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 300%;
+                height: 100%;
+                background: linear-gradient(90deg, #777, #444);
+                transition: all 0.4s ease;
+                z-index: 1;
+                transform: rotate(10deg);
+              "></span>
+            </a>
+          </section>
+          
+          <script>
+            // Add hover effect for both buttons
+            const buttons = document.querySelectorAll('a[download], a[target="_blank"]');
+            buttons.forEach(button => {
+              button.addEventListener('mouseover', function () {
+                const span = button.querySelector('span:nth-child(2)');
+                span.style.left = '0';
+              });
+              button.addEventListener('mouseleave', function () {
+                const span = button.querySelector('span:nth-child(2)');
+                span.style.left = '-100%';
+              });
+            });
+          </script>
+      </article>
+
+
+
+
+
+      <!--
+        - #IMPORT
+      -->
+            <button class="filter-select" data-select>
+            </button> 
+       <!--
+        - #IMPORT
+      -->
+
+
+
+
+<!--
+    - #PROJECTS
+-->
+
+<article class="project" data-page="project">
+
+  <header>
+    <h2 class="h2 article-title">Project</h2>
+  </header>
+
+  <section class="project-posts">
+
+    <ul class="project-posts-list">
+
+      <li class="project-post-item">
+        <a href="https://github.com/AnkushLagwal/HIMACHAL-TOURISM-WEB">
+
+          <figure class="project-banner-box">
+            <img src="images/HIMACHAL-TOURISM-WEB.png" alt="HIMACHAL-TOURISM-WEB" loading="lazy">
+          </figure>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <p class="project-category">Design</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">2021-2022</time>
+            </div>
+
+            <h3 class="h3 project-item-title">HIMACHAL-TOURISM-WEB</h3>
+
+            <p class="project-text">
+              Welcome to Himachal Pradesh Tourism Website– a land of breathtaking landscapes, vibrant culture, and endless adventures, brought to you through this dedicated platform.
+
+              Explore the heart of the Himalayas with our Himachal Tourism website, your ultimate guide to the region's stunning beauty, rich heritage, and unforgettable experiences.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+	  
+	  <p>
+	  <h5> Due to unforeseen circumstances, certain projects are currently unavailable. I am actively addressing the issue and working diligently to resolve it as quickly as possible.</h5>
+	  <h5>Thank you for your patience and understanding.😊🙏</h5>
+	  <</p>
+
+    <!--  <li class="project-post-item">
+        <a href="https://aryanjaswal0507.github.io/PET-WEBSITE/">
+
+          <figure class="project-banner-box">
+            <img src="images/pet-website.png" alt="PET-WEBSITE" loading="lazy">
+          </figure>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <p class="project-category">Design</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">Feb 23, 2022</time>
+            </div>
+
+            <h3 class="h3 project-item-title">PET-WEBSITE</h3>
+
+            <p class="project-text">
+              Welcome to my pet website, where you’ll find detailed information about various pets, their care, and the best tips
+              for keeping them happy and healthy. This site is a project I created for practicing HTML and showcasing my web 
+              development skills.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="project-post-item">
+        <a href="https://github.com/aryanjaswal0507/MOVIE-RECOMMENDATION/tree/main">
+
+          <figure class="project-banner-box">
+            <img src="images/MOVIE RECC.png" alt="MOVIE-RECCOMNDATION" loading="lazy">
+          </figure>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <p class="project-category">Design</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">Feb 23, 2022</time>
+            </div>
+
+            <h3 class="h3 project-item-title">MOVIE-RECCOMNDATION</h3>
+
+            <p class="project-text">
+              I developed a movie recommendation system using Python, Streamlit, and machine learning to provide personalized suggestions based on user-selected titles. By analyzing a dataset of 10,000 movies from TMDB, I combined genres and movie overviews into a ‘tags’ feature to better capture relationships between films. Using CountVectorizer for text vectorization and cosine similarity for similarity measurement, the system effectively recommends movies. The user interface, built with Streamlit, allows for easy interaction, while pickle was used to optimize model loading and ensure fast performance. This project demonstrates the use of NLP and machine learning to enhance user engagement.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+
+      <li class="project-post-item">
+        <a href="https://github.com/aryanjaswal0507/HAND-GESTURE">
+
+          <figure class="project-banner-box">
+            <img src="images/hand gesture.png" alt="Hand Gesture Presentation Controller" loading="lazy">
+          </figure>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <p class="project-category">Design</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">Feb 23, 2022</time>
+            </div>
+
+            <h3 class="h3 project-item-title">Hand Gesture Presentation Controller</h3>
+
+            <p class="project-text">
+              The Hand Gesture Presentation Controller is a project that enables users to control slides using hand gestures, making presentations more interactive. It uses a webcam to detect hand movements for slide navigation and drawing in real-time. Key features include swipe gestures for slide control, finger gestures for drawing, an undo option for removing the last drawing, and a webcam feed overlay beside the presentation slides. Built using Python, OpenCV for image processing, and CVZone for gesture detection, the setup requires installing Python along with libraries like OpenCV, NumPy, and CVZone.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+
+      <li class="project-post-item">
+        <a href="https://github.com/aryanjaswal0507/YT-CHROME.EXTENSION">
+
+          <figure class="project-banner-box">
+            <img src="images/yt-ext.png" alt="YouTube Audio Control Extension" loading="lazy">
+          </figure>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <p class="project-category">Design</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">Feb 23, 2022</time>
+            </div>
+
+            <h3 class="h3 project-item-title">YouTube Audio Control Extension</h3>
+
+            <p class="project-text">
+              The YouTube Audio Control Extension is a Chrome extension that enhances the audio experience of YouTube videos by allowing users to adjust the volume and boost bass levels. It features a user-friendly popup interface with sliders for easy control over volume and bass, providing a richer sound experience. The extension is built using HTML, CSS, and JavaScript, utilizing the Chrome extension API to modify YouTube’s audio properties directly from the browser.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="project-post-item">
+        <a href="https://github.com/aryanjaswal0507/GEO-LOCATION">
+
+          <figure class="project-banner-box">
+            <img src="images/geo-loc.png" alt="Geolocation Auto-Attendance System" loading="lazy">
+          </figure>
+
+          <div class="project-content">
+
+            <div class="project-meta">
+              <p class="project-category">Design</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">Feb 23, 2022</time>
+            </div>
+
+            <h3 class="h3 project-item-title">Geolocation Auto-Attendance System</h3>
+
+            <p class="project-text">
+              This project is an Auto-Attendance System that uses geolocation technology to track user attendance by checking their location every 10 seconds. It determines if the user is within a predefined geofence and records the time spent in that area. If the user leaves, it counts the pauses. Built with HTML, CSS, and JavaScript, the system uses the Geolocation API for real-time location tracking and features a responsive design for both desktop and mobile devices.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+-->
+
+    </ul>
+
+  </section>
+
+</article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+      
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27159.344467248935!2d76.51853075!3d31.690807950000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904d44c8c5639a5%3A0x2315ba2666cfba94!2sHamirpur%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1735388326198!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+      
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+      
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+		  <input type="hidden" name="access_key" value="eb4ab4fe-73ce-421b-97c1-79d68692437d">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="Phone no." class="form-input" placeholder="Phone no." required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+      
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button> 
+          </form>
+        </section>
+      </article>
+    
+     
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
